@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo4.css">
+</head>
+
+<body>
+    <form method="POST" action="blablabla.php" enctype="multipart/form-data">
+        <!--se colocar arquivo tem que colocar esse enctype ou o servidor pode não receber-->
+
+        <input type="hidden" name="contry" value="JP" />
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>
+                Primeiro completo:<br />
+                <input type="text" name="name" required minlength="2" maxlength="50" />
+            </label><br>
+
+            <label>
+                Sobrenome completo:<br />
+                <input type="text" name="lastname" required />
+            </label><br>
+
+            <label>
+                Números de filhos:<br />
+                <input type="number" name="kids"    />
+            </label><br>
+
+            <label>
+                Data de nascimento:<br />
+                <input type="date" name="birthday" required max="2022-05-30" />
+            </label><br>
+
+            <label>
+                Foto:<br>
+                <input type="file" name="photo" accept="image/*" />
+            </label><br>
+            <label>
+                PDF:<br>
+                <input type="file" name="pdf" accept="application/pdf" />
+            </label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label>
+                Noma da empresa:<br />
+                <input type="text" name="companyname" />
+            </label><br>
+
+            <label>
+                Cargo:<br />
+                <input type="text" name="jobtitle" />
+            </label><br>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+
+
+    </form>
+
+</body>
+
+</html>
